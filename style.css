@@ -1,0 +1,22 @@
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+button {
+    background-color: whitesmoke;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    
+}
+
+
