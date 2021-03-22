@@ -17,11 +17,16 @@ body {
 }
 
 #balranyil img {
-    transform: scale(2, 0.5);
-    width: 140px;
-    height: 60px;
+    display:flex;
+    transform: scale(0.7);
+    align-items: center;
+    margin-left: 10px;
+    
 }
 
-#jobbranyil img {
-    transform: scale(0.5) translate(-100%, -100%);
+#jobbranyil {
+    display: flex;
+    transform: scale(0.7) ;
+    transform: rotate(1 turn);
+    align-items: center;
 }
