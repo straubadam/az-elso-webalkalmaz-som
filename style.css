@@ -1,22 +1,27 @@
+
+body {
+    background-color: lightgray;
+}
 .container {
-    width: 800px;
+    width: 90%;
+    display: flex;
     margin: auto;
-}
-
-h1 {
-    margin-left: 10px;
-}
-
-h3 {
-    margin-left: 10px;
-}
-
-button {
     background-color: whitesmoke;
-    border: 1px;
-    border-radius: 5px;
-    border-style: solid;
     
 }
 
+#kepdoboz img {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
 
+#balranyil img {
+    transform: scale(2, 0.5);
+    width: 140px;
+    height: 60px;
+}
+
+#jobbranyil img {
+    transform: scale(0.5) translate(-100%, -100%);
+}
