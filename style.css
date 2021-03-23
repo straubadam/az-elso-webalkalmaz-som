@@ -1,10 +1,10 @@
 body {
     background-color: lightgray;
-    display: flex;
-}
+    display: flex;    
+    }
 
 .container {
-    width: 70%;
+    width: 60%;
     display: flex;
     margin: auto;
     background-color: whitesmoke;
