@@ -1,13 +1,22 @@
 
 body {
     background-color: lightgray;
+    display: flex;
 }
 .container {
-    width: 90%;
+    width: 70%;
     display: flex;
     margin: auto;
     background-color: whitesmoke;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
+}
+
+#kepdoboz {
+    display: flex;
+    align-items: center;
 }
 
 #kepdoboz img {
@@ -16,17 +25,14 @@ body {
     margin: auto;
 }
 
-#balranyil img {
-    display:flex;
-    transform: scale(0.7);
-    align-items: center;
-    margin-left: 10px;
+#balranyil {
+      margin-right: 30px;
+     justify-content: center;
+     
+
     
 }
 
 #jobbranyil {
-    display: flex;
-    transform: scale(0.7) ;
-    transform: rotate(1 turn);
-    align-items: center;
+    
 }
