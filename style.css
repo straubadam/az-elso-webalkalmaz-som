@@ -16,23 +16,18 @@ body {
 #kepdoboz {
     display: flex;
     align-items: center;
-    align-content: center;
-    
 }
 
 #kepdoboz img {
     width: 800px;
     height: 600px;
-    
+    margin: auto;
 }
 
 #balranyil {
     margin-right: 30px;
     justify-content: center;
-    align-content: center;
-    
-}
-
-#jobbranyil {
     transform: rotate(0.5turn);
 }
+
+#jobbranyil {}
