@@ -1,12 +1,5 @@
-
-// $('#gomb').click(function () {
-// let beolvasas = $('#szovegbevitel').val();
-//    $("#felsorolas:last-of-type").append("<li>" + beolvasas + "</li>");
-// });
-
-
-let keptomb = [
-        {
+let data = [
+    {
         photo: 'images/kep1.jpg',
         title: 'Én és a ló',
         description: 'Túrázás közben egy pacival'
@@ -55,4 +48,35 @@ let keptomb = [
 
 ];
 
-$('#kepdoboz').attr('src', keptomb.photo);
+let currentPhoto = 0;
+
+$('#photo').attr('src', data[currentPhoto].photo);
+
+
+
+/*
+let loadPhoto = (photoNumber) => {
+    $('#photo').attr('src', data[photoNumber].photo);
+}
+
+$('#balranyil').click (() => {
+    if(currentPhoto > 0) {
+        currentPhoto --;
+        loadPhoto(currentPhoto);
+    } else {
+        currentPhoto = 9;
+        loadPhoto(currentPhoto);
+    }   
+})
+
+$('#jobbranyil').click (() => {
+    if(currentPhoto > 9) {
+        currentPhoto = 0;
+        loadPhoto(currentPhoto);
+    } else {
+        currentPhoto ++;
+        loadPhoto(currentPhoto);
+    }   
+})
+
+*/
