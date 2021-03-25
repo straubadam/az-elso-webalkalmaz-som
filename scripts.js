@@ -57,14 +57,13 @@ let loadPhoto = (photoNumber) => {
 
 $('#jobbranyil').click(() => {
     if (currentPhoto > 0) {
-    currentPhoto++}
+    currentPhoto--}
     loadPhoto(currentPhoto);
   })
 
   $('#balranyil').click(() => {
-    if (currentPhoto < 9) { 
-        current++; }
-    currentPhoto--;
+    if (currentPhoto < data.length) { 
+        currentPhoto++;}
     loadPhoto(currentPhoto);
   })
 
