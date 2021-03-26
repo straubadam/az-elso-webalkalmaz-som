@@ -53,6 +53,9 @@ $('#photo').attr('src', data[currentPhoto].photo);
 
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', data[currentPhoto].photo);
+    $('#photo-title').text('src', data[currentPhoto].title);
+    
+
 }
 
 $('#balranyil').click(() => {
@@ -74,6 +77,8 @@ data.forEach((item, index) => {
                             <img src="${item.photo}" data-number="${index}">
                             </div>`);
 
+    $('.thumbnail').click((event) => {
+        let ind = parseInt($(event.target).attr('data-number'));
+        loadPhoto(ind);
+    });
 });
-
-

@@ -39,15 +39,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+    }
 
 #thumbok img {
     width: 100px;
-    margin: 10px;
-    
     box-shadow: 2px 2px 5px dimgray;
+    margin: 10px 5px 10px 5px;
+
+    outline: 3px solid white;
+    outline-offset: -1px;
     
     
 }
 
-
+#photo-title {
+    display: flex;
+}
