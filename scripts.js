@@ -55,46 +55,28 @@ let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', data[currentPhoto].photo);
 }
 
-$('#jobbranyil').click(() => {
+$('#balranyil').click(() => {
     if (currentPhoto > 0) {
-    currentPhoto--}
-    loadPhoto(currentPhoto);
-  })
-
-  $('#balranyil').click(() => {
-    if (currentPhoto < data.length) { 
-        currentPhoto++;}
-    loadPhoto(currentPhoto);
-  })
-
-
-/*
-
-
-
-Ez Csaba kódja elemzéshez:
-let loadPhoto = (photoNumber) => {
-    $('#photo').attr('src', data[photoNumber].photo);
-}
-
-$('#balranyil').click (() => {
-    if(currentPhoto > 0) {
-        currentPhoto --;
-        loadPhoto(currentPhoto);
-    } else {
-        currentPhoto = 9;
-        loadPhoto(currentPhoto);
+        currentPhoto--
     }
+    loadPhoto(currentPhoto);
 })
 
-$('#jobbranyil').click (() => {
-    if(currentPhoto > 9) {
-        currentPhoto = 0;
-        loadPhoto(currentPhoto);
-    } else {
-        currentPhoto ++;
-        loadPhoto(currentPhoto);
+$('#jobbranyil').click(() => {
+    if (currentPhoto < data.length) {
+        currentPhoto++;
     }
+    loadPhoto(currentPhoto);
 })
 
-*/
+
+let thumbdata = ['1', '2', '3', '4', '5', '6', '7', '8'];
+
+thumbdata.forEach((item, index) => {
+    $('#thumbok').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+    $('.box').click((event) => {
+        let indexClicked = $(event.target).attr('data-index');
+        let numberIndex = parseInt(indexClicked);
+        $('#clicked').text(data[indexClicked]);
+    });
+});

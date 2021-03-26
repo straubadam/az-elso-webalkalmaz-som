@@ -1,10 +1,10 @@
 body {
     background-color: lightgray;
-    display: flex;    
-    }
+    display: flex;
+}
 
 .container {
-    width: 60%;
+    width: 75%;
     display: flex;
     margin: auto;
     background-color: whitesmoke;
@@ -12,6 +12,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #kepdoboz {
@@ -28,10 +29,19 @@ body {
 #balranyil {
     margin-right: 30px;
     justify-content: center;
-    
 }
 
 #jobbranyil {
     transform: rotate(180deg);
     margin-left: 30px;
 }
+
+#thumbok {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: lime;
+    box-shadow: 2px 2px 5px dimgray;
+}
+
