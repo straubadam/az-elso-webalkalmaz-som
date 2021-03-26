@@ -69,14 +69,11 @@ $('#jobbranyil').click(() => {
     loadPhoto(currentPhoto);
 })
 
+data.forEach((item, index) => {
+    $('#thumbok').append(`<div class="thumbnail" data-number="${index}">
+                            <img src="${item.photo}" data-number="${index}">
+                            </div>`);
 
-let thumbdata = ['1', '2', '3', '4', '5', '6', '7', '8'];
-
-thumbdata.forEach((item, index) => {
-    $('#thumbok').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
-    $('.box').click((event) => {
-        let indexClicked = $(event.target).attr('data-index');
-        let numberIndex = parseInt(indexClicked);
-        $('#clicked').text(data[indexClicked]);
-    });
 });
+
+

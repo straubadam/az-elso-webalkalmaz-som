@@ -9,7 +9,6 @@ body {
     margin: auto;
     background-color: whitesmoke;
     box-shadow: 2px 2px 5px dimgray;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,11 +36,18 @@ body {
 }
 
 #thumbok {
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    background: lime;
-    box-shadow: 2px 2px 5px dimgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
+#thumbok img {
+    width: 100px;
+    margin: 10px;
+    
+    box-shadow: 2px 2px 5px dimgray;
+    
+    
+}
+
 
